@@ -6,7 +6,7 @@ Process items in batches rather than one-by-one.
 # See https://pypi.python.org/pypi?%3Aaction=list_classifiers for classifiers
 
 setup(
-    name='batcher',
+    name='python-batcher',
     version='0.0.1',
     description="Process items in batches rather than one-by-one.",
     long_description=long_desc,
@@ -20,7 +20,7 @@ setup(
     keywords='batch,database insert',
     author='Paul M Furley',
     author_email='paul@paulfurley.com',
-    url='http://paulfurley.com',
+    url='https://github.com/paulfurley/python-batcher',
     license='MIT',
     packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
     namespace_packages=[],
