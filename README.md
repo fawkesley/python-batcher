@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/paulfurley/python-batcher.svg)](https://travis-ci.org/paulfurley/python-batcher)
+
 # Batcher
 
 Store up items and process them as a batch, rather than one by one.
