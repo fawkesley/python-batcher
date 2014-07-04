@@ -7,7 +7,7 @@ Process items in batches rather than one-by-one.
 
 setup(
     name='python-batcher',
-    version='0.0.1',
+    version='0.0.2',
     description="Process items in batches rather than one-by-one.",
     long_description=long_desc,
     classifiers=[
