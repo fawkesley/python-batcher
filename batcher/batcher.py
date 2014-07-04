@@ -53,6 +53,8 @@ class BatchProcessor(object):
             self.flush()
 
     def flush(self):
+        if not len(self.queue):
+            return
         logger.debug("Flushing batch of {} items".format(len(self.queue)))
         self.callback(self.queue)
         self.queue = []

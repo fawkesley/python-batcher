@@ -1,4 +1,4 @@
-from mock import Mock
+from mock import Mock, call
 from nose.tools import assert_equal
 
 from batcher import batcher
@@ -12,5 +12,7 @@ def test_that_batcher_correctly_batches():
             b.push(i)
 
     assert_equal(2, process_items.call_count)
-    assert_equal([0, 1, 2, 3, 4], process_items.call_args_list[0])
-    assert_equal([5, 6, 7, 8, 9], process_items.call_args_list[0])
+    assert_equal([
+        call([0, 1, 2, 3, 4]),
+        call([5, 6, 7, 8, 9])],
+        process_items.call_args_list)
